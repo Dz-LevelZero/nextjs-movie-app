@@ -6,8 +6,8 @@ const Navbar = () => {
       <div className="font-bold text-neutral-100 p-4 max-w-7xl mx-auto container tracking-widest font-neue">
         <Link href="/">
           <a className="text-base md:text-2xl">
-            Movie <span className="text-orange-400 ">App</span>
-          </a>
+            Movie <span className="text-yelorange ">App</span>
+          </a> 
         </Link>
       </div>
     </nav>

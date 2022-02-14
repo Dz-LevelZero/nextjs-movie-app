@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         'neue': ['Bebas Neue', 'cursive']
       },
+      colors: {
+        'yelorange': '#FBA725',
+      }
     },
   },
   plugins: [],
