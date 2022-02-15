@@ -1,17 +1,19 @@
 import axios from "axios";
 import Image from "next/image";
+import Meta from "../../../components/Meta";
 import { server } from "../../../config";
 
 const MovieDetails = ({ movie }) => {
   return (
     <div className="container max-w-4xl mx-auto pt-6">
-    <div className="px-3">
-      <Image src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`} alt={movie.title} width={1000} height={600} className="rounded-md"/>
-      <h1 className="font-bold text-xl my-2">{movie.title}</h1>
-      <p className="text-violet-700 text-sm mt-4">{movie.overview}</p>
-      <p className="my-1 font-bold">Genre: <span className="text-violet-700 font-bold">{movie.genres.map(genre => genre.name).join(', ')}</span></p>
-      <p className="text-sm font-bold mb-5">Release Date: <span className="text-violet-700 font-bold">{movie.release_date}</span></p>
-    </div>
+      <Meta title={movie.title} /> 
+      <div className="px-3">
+        <Image src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`} alt={movie.title} width={1000} height={600} className="rounded-md"/>
+        <h1 className="font-bold text-xl my-2">{movie.title}</h1>
+        <p className="text-violet-700 text-sm mt-4">{movie.overview}</p>
+        <p className="my-1 font-bold">Genre: <span className="text-violet-700 font-bold">{movie.genres.map(genre => genre.name).join(', ')}</span></p>
+        <p className="text-sm font-bold mb-5">Release Date: <span className="text-violet-700 font-bold">{movie.release_date}</span></p>
+      </div>
     </div>
   )
 }
