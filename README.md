@@ -3,8 +3,6 @@
 This project is inspired from  [Cand Dev](https://www.youtube.com/watch?v=jfNS3254gS8&t=70s) Youtube tutorial , Special Thanks :) 
  
 
-
-
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
