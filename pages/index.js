@@ -1,5 +1,4 @@
 import axios from 'axios';
-import Head from 'next/head'
 import Hero from '../components/Hero'
 import PopularMovie from '../components/PopularMovie';
 import { server } from '../config'
@@ -7,7 +6,7 @@ import { server } from '../config'
 export default function Home({ movies }) {
   return (
     <div className='bg-violet-600 '>
-      <Hero />
+      <Hero movies={movies.results}/>
       <PopularMovie movies={movies.results} />
     </div>
   )
