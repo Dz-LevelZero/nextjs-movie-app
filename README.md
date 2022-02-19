@@ -1,4 +1,5 @@
 # Next.js Movie App
+![Movie app](https://i.imgur.com/XbPrlpq.png)
 
 This project is inspired from  [Cand Dev](https://www.youtube.com/watch?v=jfNS3254gS8&t=70s) Youtube tutorial , Special Thanks :) 
  

@@ -20,7 +20,10 @@ const MovieDetails = ({ movie }) => {
 
 export async function getStaticProps(context) { 
   const { id } = context.params;
-  const res = await axios(`${server}/${id}?api_key=${process.env.API_KEY}&language=en-US&page=1`); 
+
+  const res = await axios(`${server}/${id}?api_key=1af8f5a0dac921ed793eaf9b1a89b23e&language=en-US&page=1`); 
+//  if Using .env
+  // const res = await axios(`${server}/${id}?api_key=${process.env.API_KEY}&language=en-US&page=1`); 
   const movie = res.data;
   return {
     props: { movie }
@@ -28,7 +31,11 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() { 
-  const res = await axios(`${server}/popular?api_key=${process.env.API_KEY}&language=en-US&page=1`); 
+
+  // i have not hide api key because its for free
+  const res = await axios(`${server}/popular?api_key=1af8f5a0dac921ed793eaf9b1a89b23e&language=en-US&page=1`); 
+  // if Using .env  
+  // const res = await axios(`${server}/popular?api_key=${process.env.API_KEY}&language=en-US&page=1`); 
   const movies = res.data.results;
 
   const ids = movies.map(movie => movie.id );
